@@ -1,7 +1,7 @@
 import './App.css';
 
 function App() {
-  return <div>reto rimac</div>;
+  return <div className="lato">reto rimac</div>;
 }
 
 export default App;

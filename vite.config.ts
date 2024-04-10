@@ -1,3 +1,4 @@
+import path from 'path';
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import Unfonts from 'unplugin-fonts/vite';
@@ -23,4 +24,9 @@ export default defineConfig({
       },
     }),
   ],
+  resolve: {
+    alias: {
+      '@': path.join(__dirname, 'src/'),
+    },
+  },
 });

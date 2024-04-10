@@ -1,5 +1,7 @@
+import { PageBase } from '@/components';
+
 function App() {
-  return <div className="lato">reto rimac</div>;
+  return <PageBase />;
 }
 
 export default App;

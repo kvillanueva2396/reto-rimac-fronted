@@ -1,47 +1,5 @@
-@font-face {
-  font-family: sonoma;
-  src: url("/public/assets/fonts/BRSonoma/BRSonoma-Regular.otf") format("truetype");;
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: sonoma;
-  src: url("/public/assets/fonts/BRSonoma/BRSonoma-SemiBold.otf") format("truetype");;
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: sonoma;
-  src: url("/public/assets/fonts/BRSonoma/BRSonoma-Bold.otf") format("truetype");;
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: lato;
-  src: url("/public/assets/fonts/Lato/Lato-Regular.ttf") format("truetype");;
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: lato;
-  src: url("/public/assets/fonts/Lato/Lato-Bold.ttf") format("truetype");;
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: lato;
-  src: url("/public/assets/fonts/Lato/Lato-Black.ttf") format("truetype");;
-  font-weight: 900;
-  font-style: normal;
-}
-
 .sonoma {
-  font-family: sonoma;
+  font-family: 'BRSomona';
   font-weight: 700;
 }
 

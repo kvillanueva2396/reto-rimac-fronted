@@ -1,9 +1,19 @@
-.sonoma {
-  font-family: 'BRSomona';
-  font-weight: 700;
-}
+//font-family
+$font-family-primary: 'BRSomona';
+$font-family-secondary: 'Lato';
 
-.lato {
-  font-family: lato;
-  font-weight: 900;
-}
+//font-size
+$text-xs: 10px;
+$text-sm: 12px;
+$text-md: 14px;
+$text-lg: 16px;
+$text-xl: 18px;
+$text-2xl: 20px;
+$text-6xl: 32px;
+$text-10xl: 40px;
+
+//font-weight
+$font-weight-regular: 400;
+$font-weight-semilbold: 600;
+$font-weight-bold: 700;
+$font-weight-black: 900;

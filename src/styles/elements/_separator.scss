@@ -1,0 +1,6 @@
+@use '@/styles/settings/variables';
+
+hr {
+  height: 1px;
+  background-color: rgba(variables.$separator-2, 0.1);
+}

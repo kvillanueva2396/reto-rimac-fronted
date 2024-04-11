@@ -5,6 +5,13 @@
 
 //app styles
 @import 'generic/position';
+@import 'generic/box-sizing';
+@import 'generic/hidden';
+@import 'elements/heading';
 @import 'elements/body';
+@import 'elements/separator';
+@import 'elements/input';
+@import 'elements/select';
 @import 'objects/ui-list';
 @import 'objects/container';
+@import 'atoms/input';

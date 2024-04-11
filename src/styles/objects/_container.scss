@@ -1,6 +1,10 @@
+@use '@/styles/settings/variables';
+
 .container {
+  position: relative;
   max-width: 1200px;
   padding: 0 32px;
+  z-index: variables.$mayor-z-index;
 
   @media (max-width: 768px) {
     padding: 0 24px;

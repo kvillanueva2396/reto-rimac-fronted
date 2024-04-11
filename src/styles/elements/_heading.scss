@@ -1,0 +1,14 @@
+@use '@/styles/settings/variables';
+
+h1 {
+  font-size: variables.$text-10xl;
+}
+
+h2 {
+  font-size: variables.$text-6xl;
+  margin: 0;
+
+  @media (min-width: 768px) {
+    font-size: variables.$text-8xl;
+  }
+}

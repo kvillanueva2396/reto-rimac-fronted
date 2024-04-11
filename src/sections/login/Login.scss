@@ -1,15 +1,21 @@
 @use '@/styles/settings/variables';
 
 .login {
-  min-height: calc(100vh - 160px);
+  position: relative;
+  min-height: calc(100vh - 170px);
   padding: 4rem 0 96px;
   overflow: hidden;
   background-color: variables.$body-background;
+  z-index: variables.$contain;
+
+  @media (min-width: 768px) {
+    min-height: calc(100vh - 103px);
+  }
 
   &__blur {
     &-left {
       position: absolute;
-      bottom: 105px;
+      bottom: 0;
       left: 0;
       display: none;
 
@@ -19,7 +25,7 @@
 
       &-2 {
         position: absolute;
-        bottom: 170px;
+        bottom: 0;
         left: 0;
         display: block;
 
@@ -49,6 +55,57 @@
           display: none;
         }
       }
+    }
+  }
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-left {
+    width: 100%;
+    max-width: 480px;
+  }
+
+  &__family {
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  &-title-gradient {
+    background: linear-gradient(
+      90deg,
+      variables.$color-gradient-1 0%,
+      variables.$color-gradient-2 100%
+    );
+    border-radius: 4px;
+    display: inline-block;
+    color: variables.$text;
+    font-weight: variables.$font-weight-bold;
+    font-size: variables.$text-xs;
+    padding: 2px 8px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+  }
+
+  &-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__title {
+      font-size: 28px;
+    }
+
+    &__image {
+      width: 136px;
+      min-width: 136px;
+      border-radius: 20px;
+    }
+
+    &__separator {
+      width: 100%;
     }
   }
 }

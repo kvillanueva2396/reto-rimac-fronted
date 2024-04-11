@@ -9,7 +9,7 @@ export default function Header() {
           <img src="/assets/logos/rimac.png" alt="Rimac" />
         </div>
         <ul className="header-info ui-list">
-          <li>¡Compra por este medio!</li>
+          <li className="header-info__aviso">¡Compra por este medio!</li>
           <li className="header-info__numero">
             <FaPhone />
             <p>(01) 411 6001</p>

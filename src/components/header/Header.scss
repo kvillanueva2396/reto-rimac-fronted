@@ -21,6 +21,14 @@
     font-weight: variables.$font-weight-semilbold;
     font-size: variables.$text-xs;
 
+    &__aviso {
+      display: none;
+
+      @media (min-width: 768px) {
+        display: block;
+      }
+    }
+
     &__numero {
       display: flex;
       align-items: center;

@@ -1,7 +1,7 @@
 import { PageBase } from '@/components';
 
 function App() {
-  return <PageBase />;
+  return <PageBase>children</PageBase>;
 }
 
 export default App;

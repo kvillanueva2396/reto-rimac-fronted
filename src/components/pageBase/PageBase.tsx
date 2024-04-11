@@ -1,9 +1,17 @@
+import { StoreProvider } from '@/store/storeProvider';
 import { Header } from '../header';
 
-export default function PageBase() {
+interface Props {
+  children: React.ReactNode;
+}
+
+export default function PageBase({ children }: Props) {
   return (
-    <div className="page-base">
-      <Header></Header>
-    </div>
+    <StoreProvider>
+      <div className="page-base">
+        <Header />
+        {children}
+      </div>
+    </StoreProvider>
   );
 }

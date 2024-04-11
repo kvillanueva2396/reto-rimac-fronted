@@ -1,1 +1,9 @@
+//variables
 @import 'settings/variables';
+
+@import 'normalize.css';
+
+//app styles
+@import 'elements/body';
+@import 'objects/ui-list';
+@import 'objects/container';

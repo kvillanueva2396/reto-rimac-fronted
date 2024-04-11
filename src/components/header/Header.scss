@@ -1,0 +1,33 @@
+@use '@/styles/settings/variables';
+
+.header {
+  position: relative;
+  z-index: variables.$header-z-index;
+  width: 100%;
+  background-color: transparent;
+
+  &-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  &-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: variables.$font-weight-semilbold;
+    font-size: variables.$text-xs;
+
+    &__numero {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: variables.$font-weight-bold;
+      font-size: variables.$text-xl;
+      line-height: 20px;
+    }
+  }
+}

@@ -1,9 +1,7 @@
-import './Login.scss';
-import { Footer } from '@/components';
-import LoginForm from './LoginForm';
-import LoginTitle from './LoginTitle';
+import './LoginSection.scss';
+import { Footer, LoginForm, LoginTitle } from '@/components';
 
-export default function Login() {
+export default function LoginSection() {
   return (
     <>
       <section className="login">

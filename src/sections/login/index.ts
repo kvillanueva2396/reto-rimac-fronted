@@ -1,3 +1,3 @@
-import Login from './Login';
+import LoginSection from './LoginSection';
 
-export { Login };
+export { LoginSection };

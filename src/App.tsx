@@ -1,10 +1,10 @@
 import { PageBase } from '@/components';
-import { Login } from './sections';
+import { LoginSection } from './sections';
 
 function App() {
   return (
     <PageBase>
-      <Login />
+      <LoginSection />
     </PageBase>
   );
 }

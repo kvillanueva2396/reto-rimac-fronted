@@ -1,0 +1,61 @@
+@use '@/styles/settings/variables';
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  &__input {
+    position: absolute;
+    opacity: 0;
+  }
+
+  &__text {
+    font-size: variables.$text-xs;
+    letter-spacing: 0.1px;
+    line-height: 20px;
+    font-weight: variables.$font-weight-regular;
+  }
+
+  input:checked ~ .checkmark {
+    background-color: variables.$checkbox;
+  }
+
+  .checkmark {
+    position: relative;
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    background-color: transparent;
+    box-shadow: 0 0 0 1px inset variables.$text;
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: none;
+    }
+  }
+}
+
+.checkbox input:checked ~ .checkmark::after {
+  display: block;
+}
+
+.checkbox .checkmark::after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

@@ -1,0 +1,21 @@
+@use '@/styles/settings/variables';
+
+.btn {
+  cursor: pointer;
+  position: relative;
+  border-radius: 40px;
+  text-align: center;
+  white-space: nowrap;
+  letter-spacing: 0.4px;
+  text-decoration: none;
+  border: none;
+  color: variables.$body-background;
+  font-weight: variables.$font-weight-bold;
+  font-size: variables.$text-xl;
+}
+
+.btn-primary {
+  background-color: variables.$text;
+  width: 100%;
+  padding: 18px 32px;
+}

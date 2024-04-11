@@ -1,7 +1,22 @@
+import { Checkbox } from '@/components';
 import './LoginForm.scss';
 import { IoIosArrowDown } from 'react-icons/io';
+import { useState } from 'react';
 
 export default function LoginForm() {
+  const [isCheckedPoliticaPrivacidad, setIsCheckedPoliticaPrivacidad] =
+    useState(false);
+  const [isCheckedPoliticaComunicaciones, setIsCheckedPoliticaComunicaciones] =
+    useState(false);
+
+  const handleCheckPoliticaPrivacidad = () => {
+    setIsCheckedPoliticaPrivacidad(!isCheckedPoliticaPrivacidad);
+  };
+
+  const handleCheckPoliticaComunicaciones = () => {
+    setIsCheckedPoliticaComunicaciones(!isCheckedPoliticaComunicaciones);
+  };
+
   return (
     <form className="login-form">
       <p className="login-form__description">
@@ -17,9 +32,6 @@ export default function LoginForm() {
           <IoIosArrowDown className="login-form__select-icon" color="black" />
         </div>
         <div className="input-container input-container--no-border-left">
-          {/* <label htmlFor="documentInput" className="hidden">
-            Nro. de Documento
-          </label> */}
           <input
             id="documentInput"
             className="input-container__input"
@@ -30,9 +42,6 @@ export default function LoginForm() {
         </div>
       </div>
       <div className="input-container">
-        {/* <label htmlFor="numeroCelular" className="hidden">
-          Celular
-        </label> */}
         <input
           id="numeroCelular"
           className="input-container__input"
@@ -41,6 +50,22 @@ export default function LoginForm() {
           placeholder="Celular"
         />
       </div>
+      <div className="login-form__checkboxes">
+        <Checkbox
+          isChecked={isCheckedPoliticaPrivacidad}
+          onChecked={handleCheckPoliticaPrivacidad}
+          description="Acepto la Politica de Privacidad"
+        />
+        <Checkbox
+          isChecked={isCheckedPoliticaComunicaciones}
+          onChecked={handleCheckPoliticaComunicaciones}
+          description="Acepto la Politica Comunicaciones Comerciales"
+        />
+      </div>
+      <p className="login-form__terminos">Aplican Términos y Condiciones.</p>
+      <button className="btn btn-primary login-form__button">
+        Cotiza aqui
+      </button>
     </form>
   );
 }

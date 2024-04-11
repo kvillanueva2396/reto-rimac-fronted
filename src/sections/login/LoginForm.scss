@@ -7,6 +7,7 @@
     line-height: 20px;
     left: 0.2px;
     color: variables.$text;
+    margin: 20px 0;
   }
 
   &-document {
@@ -44,5 +45,26 @@
 
   &__input {
     border-left: 0 !important;
+  }
+
+  &__checkboxes {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 24px;
+  }
+
+  &__terminos {
+    color: variables.$text;
+    letter-spacing: 0.1px;
+    line-height: 20px;
+    font-size: variables.$text-sm;
+    margin-top: 12px;
+    text-decoration: underline;
+    font-weight: variables.$font-weight-bold;
+  }
+
+  &__button {
+    margin-top: 24px;
   }
 }

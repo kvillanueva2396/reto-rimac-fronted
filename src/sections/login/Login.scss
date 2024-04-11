@@ -2,7 +2,7 @@
 
 .login {
   position: relative;
-  min-height: calc(100vh - 170px);
+  min-height: calc(100vh - 146px);
   padding: 4rem 0 96px;
   overflow: hidden;
   background-color: variables.$body-background;
@@ -10,6 +10,8 @@
 
   @media (min-width: 768px) {
     min-height: calc(100vh - 103px);
+    display: flex;
+    align-items: center;
   }
 
   &__blur {
@@ -62,11 +64,21 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      align-items: center;
+    }
   }
 
   &-left {
     width: 100%;
     max-width: 480px;
+    display: none;
+
+    @media (min-width: 768px) {
+      display: block;
+    }
   }
 
   &__family {
@@ -74,39 +86,26 @@
     border-radius: 20px;
   }
 
-  &-title-gradient {
-    background: linear-gradient(
-      90deg,
-      variables.$color-gradient-1 0%,
-      variables.$color-gradient-2 100%
-    );
-    border-radius: 4px;
-    display: inline-block;
-    color: variables.$text;
-    font-weight: variables.$font-weight-bold;
-    font-size: variables.$text-xs;
-    padding: 2px 8px;
-    line-height: 16px;
-    letter-spacing: 0.4px;
-  }
-
   &-mobile {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
+    @media (min-width: 768px) {
+      display: none;
+    }
+
     &__title {
-      font-size: 28px;
+      display: block;
+      @media (min-width: 768px) {
+        display: none;
+      }
     }
 
     &__image {
       width: 136px;
       min-width: 136px;
       border-radius: 20px;
-    }
-
-    &__separator {
-      width: 100%;
     }
   }
 }

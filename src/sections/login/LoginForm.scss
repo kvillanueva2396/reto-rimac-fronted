@@ -1,6 +1,34 @@
 @use '@/styles/settings/variables';
 
 .login-form {
+  margin-left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+
+  @media (min-width: 768px) {
+    margin-left: 70px;
+  }
+  @media (min-width: 1178px) {
+    margin-left: 128px;
+  }
+
+  &__title {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: block;
+    }
+  }
+
+  &__separator {
+    width: 100%;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
   &__description {
     font-size: variables.$text-md;
     font-weight: variables.$font-weight-semilbold;
@@ -66,5 +94,9 @@
 
   &__button {
     margin-top: 24px;
+
+    @media (min-width: 768px) {
+      width: 200px;
+    }
   }
 }

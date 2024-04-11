@@ -1,0 +1,27 @@
+@use '@/styles/settings/variables';
+
+.login-title {
+  &-gradient {
+    background: linear-gradient(
+      90deg,
+      variables.$color-gradient-1 0%,
+      variables.$color-gradient-2 100%
+    );
+    border-radius: 4px;
+    display: inline-block;
+    color: variables.$text;
+    font-weight: variables.$font-weight-bold;
+    font-size: variables.$text-xs;
+    padding: 2px 8px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+  }
+
+  &__message {
+    font-size: variables.$text-6xl;
+
+    @media (min-width: 768px) {
+      font-size: variables.$text-8xl;
+    }
+  }
+}

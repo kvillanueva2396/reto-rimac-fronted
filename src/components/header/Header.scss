@@ -1,7 +1,8 @@
 @use '@/styles/settings/variables';
 
 .header {
-  position: relative;
+  position: absolute;
+  top: 0;
   z-index: variables.$header-z-index;
   width: 100%;
   background-color: transparent;
@@ -12,7 +13,11 @@
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
-    height: 64px;
+    height: 56px;
+
+    @media (min-width: 768px) {
+      height: 64px;
+    }
   }
 
   &-info {

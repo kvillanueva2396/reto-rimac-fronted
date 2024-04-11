@@ -1,0 +1,54 @@
+@use '@/styles/settings/variables';
+
+.login {
+  min-height: calc(100vh - 160px);
+  padding: 4rem 0 96px;
+  overflow: hidden;
+  background-color: variables.$body-background;
+
+  &__blur {
+    &-left {
+      position: absolute;
+      bottom: 105px;
+      left: 0;
+      display: none;
+
+      @media (min-width: 768px) {
+        display: block;
+      }
+
+      &-2 {
+        position: absolute;
+        bottom: 170px;
+        left: 0;
+        display: block;
+
+        @media (min-width: 768px) {
+          display: none;
+        }
+      }
+    }
+
+    &-right {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: none;
+
+      @media (min-width: 768px) {
+        display: block;
+      }
+
+      &-2 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+
+        @media (min-width: 768px) {
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -8,7 +8,7 @@ interface Props {
 export default function PageBase({ children }: Props) {
   return (
     <StoreProvider>
-      <div className="page-base">
+      <div className="page-base relative">
         <Header />
         {children}
       </div>

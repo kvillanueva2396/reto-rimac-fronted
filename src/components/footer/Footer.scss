@@ -1,7 +1,8 @@
 @use '@/styles/settings/variables';
 
 .footer {
-  position: relative;
+  position: absolute;
+  bottom: 0;
   width: 100%;
   background-color: variables.$background-footer;
   z-index: variables.$footer-z-index;
@@ -20,11 +21,12 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    height: 106px;
+    height: 100%;
 
     @media (min-width: 768px) {
       flex-direction: row;
       justify-content: space-between;
+      height: 106px;
     }
   }
 
